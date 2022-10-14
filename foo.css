@@ -1,0 +1,356 @@
+
+/*
+ * USERS:
+ * key: sequences
+ * math-document ... no all documents
+ *
+ */
+
+/* v-math-sequence */
+.v-math-box-element {
+    width: 50px;
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.v-math-box-element-value {
+    font-weight: 600;
+}
+/* v-math-sequence */
+.v-math-sequence {
+    display: inline-flex;
+    position: relative;
+    padding: 30px;
+    border: 0.5px solid black /* blue8 */;
+    margin: 50px;
+    border: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    gap: 30px;
+}
+.v-math-box-element-index {
+    font-size: 0.6rem;
+    position: absolute;
+    bottom: -40%;
+    font-weight: 600;
+}
+/* v-math-sequence */
+.v-math-box-element-question-mark {
+    font-size: 0.7rem;
+    color: #F1F1F1;
+}
+
+.vv-question-container > *::before {
+  width: 30px;
+  height: 30px;
+  background: black;
+  font-size: 0.7em;
+  content: 'Q' counter(counter);
+  counter-increment: counter;
+  display: block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 1.75;
+  transform: translate(-1px, -100%);
+
+}
+body {
+
+}
+
+.math-document {
+  padding: 75px;
+  padding-bottom: 0;
+  counter-reset: counter;
+}
+/* app */
+.v-question-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.v-question-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.v-math-sequence {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/* app */
+.v-math-box-element-value {
+    font-size: 1rem;
+}
+/* app */
+.doc-footer {
+    font-family: Crimson Text;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.doc-line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.v-math-box-element-value {
+    font-size: 1rem;
+}
+
+/* app */
+.math-document {
+    height: 1325px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.doc-line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.v-math-box-element-value {
+    font-size: 1rem;
+}
+.doc-footer {
+    font-family: Crimson Text;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    left: 0;
+    bottom: 0;
+}
+
+/* app */
+.doc-index-default {
+    margin-right: -50px;
+}
+
+/* v-multiplication-factor-tuples */
+.v-multiplication-factor-tuples {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.v-multiplication-factor-tuples-row {
+    display: flex;
+    gap: 40px;
+}
+.v-multiplication-factor-tuples-row-item {
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MATH-ARITHMETIC */
+
+.container {
+      /* display: flex; */
+      /* gap: 10px; */
+      /* justify-content: end; */
+      /* align-items: right; */
+      /* flex-direction: column; */
+      width: fit-content;
+
+    }
+    .top {
+      display: flex;
+        align-items: end;
+      /* justify-content: end; */
+      flex-direction: column;
+      border-bottom: 1px solid black;
+      width: fit-content;
+      padding: 20px;
+      padding-bottom: 1px;
+      padding-top: 1px;
+      position: relative;
+    }
+    .last-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+    }
+
+    .group-container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      padding-bottom: 1px;
+      padding-top: 1px;
+    }
+    .element {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      outline: 1px solid blue;
+    }
+
+
+/********************** today */
+
+
+.v-math-array-el {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+
+.grid-partition-container {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.question-grid-container {
+    padding: 100px;
+}
+
+.v-math-array {
+    margin-bottom: 10px;
+}
+
+.v-math-array-row {
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+}
+
+
+
+/* v-guided-multiplication */
+
+.v-guided-multiplication-main {
+    width: fit-content;
+}
+.v-guided-multiplication-question {
+    font-size: 2rem;
+}
+
+.answer {
+    border: 1px solid black;
+    color: white;
+}
+
+
+/* v-final-answer */
+
+.center-each > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.v-final-answer {
+    gap: 30px;
+}
+
+.v-answer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 5px;
+}
+
+.v-final-answer {
+    display: flex;
+}
+
+.v-answer-box {
+    color: #333;
+    border: 1.5px solid rgba(0, 0, 0, .5) /* black5 */;
+    border-radius: 5px;
+}
+
+/* done with v-final-answer wrapper */
+
+/* full-document */
+
+.v-bullet-list-instructions {
+    width: 75%;
+}
+.v-bullet-list-header {
+    font-weight: 700;
+}
+
+.v-bullet-list-header:after {
+    content: ':';
+}
+.v-title-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* full-document */
+
+.bullet-container > * {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+
+/* full-document */
+
+.v-guided-multiplication-main {
+    margin-bottom: 70px;
+}
+.v-guided-multiplication-intro {
+    margin-bottom: 50px;
+}
+.v-guided-multiplication-top-singles {
+    margin-bottom: 100px;
+}
+
+
+.left-right-close {
+    display: flex;
+
+}
+
+.left-right-close > :first-child {
+    margin-right: 35px;
+}
+
+
+.v-page-container {
+    padding: 60px;
+    height: 1122px;
+    background: yellow;
+    margin-bottom: 0px;
+}
+
+.full-vertical-flow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.center-aligned-list {
+    margin: 0 auto;
+    width: fit-content;
+}
