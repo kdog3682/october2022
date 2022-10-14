@@ -1,0 +1,75 @@
+
+/* full-document */
+
+.document-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.doc-instructions {
+    width: 50%;
+}
+.doc-header {
+    font-size: 1.5rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+}
+
+/* app */
+.doc-index {
+    font-weight: 600;
+}
+.doc-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.left-right {
+    justify-content: space-between;
+    display: flex;
+}
+/* app */
+.doc-instructions {
+    font-family: Crimson Text;
+}
+
+
+
+.doc-footer {
+    font-family: Crimson Text;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    left: 0;
+    bottom: 0;
+}
+.doc-line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.doc-index-default {
+    margin-right: -50px;
+}
+
+
+.ddoc-container {
+}
+.bdoc-page-container {
+    max-height: 1300px;
+    margin-bottom: 50px;
+    padding: 50px;
+    position: relative;
+}
+
+
+.p-item:not(:last-child) {
+    --margin-bottom: 200px;
+    margin-bottom: var(--margin-bottom);
+}
